@@ -180,6 +180,10 @@
   min-width: min-content;
   flex-shrink: 0;
 }
+.dropdown {
+  height: max-content;
+  min-width: min-content;
+}
 .button_2 {
   --igx-button-foreground: #068E6B;
   --ig-size: var(--ig-size-small);
@@ -187,7 +191,7 @@
   min-width: min-content;
   align-self: start;
 }
-.dropdown {
+.dropdown_1 {
   left: 0;
   top: 0;
   position: absolute;

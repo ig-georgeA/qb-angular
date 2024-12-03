@@ -67,15 +67,23 @@
                 </igx-suffix>
                 field greater than equal to "400"
               </igx-chip>
-              <button igxButton="outlined" type="button" igxRipple routerLink="/a-and-b-and-c" class="button_1">
+              <button igxButton="outlined" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_1">
                 <igx-icon>
                   add
                 </igx-icon>
               </button>
+              <igx-drop-down #dropdown1 class="dropdown">
+                <igx-drop-down-item>
+                  Add condition
+                </igx-drop-down-item>
+                <igx-drop-down-item>
+                  Add group
+                </igx-drop-down-item>
+              </igx-drop-down>
             </div>
           </div>
           <div class="column-layout conditions_group">
-            <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_2">
+            <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown2" class="button_2">
               <span>Or</span>
               <igx-icon class="icon_3">
                 keyboard_arrow_down
@@ -98,7 +106,7 @@
                 </igx-chip>
               </div>
             </div>
-            <igx-drop-down #dropdown1 class="dropdown">
+            <igx-drop-down #dropdown2 class="dropdown_1">
               <igx-drop-down-item>
                 Switch to AND group
               </igx-drop-down-item>
@@ -116,7 +124,7 @@
             </button>
           </div>
         </div>
-        <igx-drop-down #dropdown class="dropdown">
+        <igx-drop-down #dropdown class="dropdown_1">
           <igx-drop-down-item>
             Switch to OR group
           </igx-drop-down-item>
