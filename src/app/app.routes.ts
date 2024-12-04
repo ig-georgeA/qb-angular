@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
+import { EmptyComponent } from './empty/empty.component';
 import { AddAComponent } from './add-a/add-a.component';
 import { AComponent } from './a/a.component';
 import { AAndNewConditionComponent } from './a-and-new-condition/a-and-new-condition.component';
@@ -9,14 +10,21 @@ import { AAndBAndNewGroupComponent } from './a-and-b-and-new-group/a-and-b-and-n
 import { AAndBAndCComponent } from './a-and-b-and-c/a-and-b-and-c.component';
 import { AAndBAndChoverComponent } from './a-and-b-and-chover/a-and-b-and-chover.component';
 import { AAndBAndCOrDComponent } from './a-and-b-and-c-or-d/a-and-b-and-c-or-d.component';
-import { AOrBAndCOrDOrDropComponent } from './a-or-b-and-c-or-d-or-drop/a-or-b-and-c-or-d-or-drop.component';
+import { AAndBAndCOrDOrDropComponent } from './a-and-b-and-c-or-d-or-drop/a-and-b-and-c-or-d-or-drop.component';
 import { SubqueryAAndBAndCOrDAndEComponent } from './subquery-a-and-b-and-c-or-d-and-e/subquery-a-and-b-and-c-or-d-and-e.component';
 import { SubqueryCollapsedComponent } from './subquery-collapsed/subquery-collapsed.component';
 import { InvalidComponent } from './invalid/invalid.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'add-a', pathMatch: 'full' },
+  { path: '', redirectTo: 'empty', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
+  {
+    path: 'empty',
+    component: EmptyComponent,
+    data: {
+      text: 'Empty'
+    }
+  },
   {
     path: 'add-a',
     component: AddAComponent,
@@ -74,10 +82,10 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'a-or-b-and-c-or-d-or-drop',
-    component: AOrBAndCOrDOrDropComponent,
+    path: 'a-and-b-and-c-or-d-or-drop',
+    component: AAndBAndCOrDOrDropComponent,
     data: {
-      text: '((A or B) and  (C or D or drop))'
+      text: '((A and B and  (C or D or drop))'
     }
   },
   {

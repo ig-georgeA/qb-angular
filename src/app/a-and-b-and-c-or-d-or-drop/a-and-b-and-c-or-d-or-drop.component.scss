@@ -82,7 +82,21 @@
   position: relative;
   padding: 0 0 0 16px;
 }
-.conditions_group {
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  margin: 0 0 8px;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.conditions_group-1 {
   border-color: #068E6B;
   border-width: 0px 0px 0px 2px;
   border-style: solid;
@@ -94,13 +108,7 @@
   margin: 0 0 8px;
   padding: 0 0 0 4px;
 }
-.group_6 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-}
-.group_7 {
+.group_8 {
   border-color: var(--ig-gray-500);
   border-width: 1px;
   border-style: dashed;
@@ -114,14 +122,14 @@
   min-width: 50px;
   min-height: 32px;
 }
-.group_8 {
+.group_9 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   gap: 8px;
   position: relative;
 }
-.group_9 {
+.group_10 {
   justify-content: space-between;
   align-items: stretch;
   align-content: flex-start;
@@ -129,7 +137,7 @@
   margin: 8px 0 0;
   min-width: 50px;
 }
-.group_10 {
+.group_11 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -149,26 +157,26 @@
 .icon {
   color: #9C27B0;
 }
-.icon_1 {
-  color: #068E6B;
-}
 .chip {
   --ig-size: var(--ig-size-large);
   width: max-content;
   height: max-content;
 }
-.icon_2 {
+.icon_1 {
   --size: 18px;
   font-size: 18px;
   width: 18px;
   height: 18px;
   color: var(--ig-gray-500);
 }
-.icon_3 {
+.icon_2 {
   --size: 18px;
   font-size: 18px;
   width: 18px;
   height: 18px;
+}
+.icon_3 {
+  color: #068E6B;
 }
 .text_1 {
   color: var(--ig-gray-600);

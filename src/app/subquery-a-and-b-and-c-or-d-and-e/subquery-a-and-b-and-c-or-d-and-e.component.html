@@ -40,12 +40,12 @@
           <div class="column-layout group_6">
             <div class="row-layout group_7">
               <div class="row-layout group_8">
-                <igx-select type="border" [(ngModel)]="value" class="select_1">
+                <igx-select type="box" [(ngModel)]="value" class="select_1">
                   <igx-select-item value="1">
                     Id
                   </igx-select-item>
                 </igx-select>
-                <igx-select type="border" [(ngModel)]="value" class="select_1">
+                <igx-select type="box" [(ngModel)]="value" class="select_1">
                   <igx-select-item value="1">
                     in
                   </igx-select-item>
@@ -53,18 +53,18 @@
                     greater than or equal to
                   </igx-select-item>
                 </igx-select>
-                <igx-input-group type="border" class="input">
+                <igx-input-group type="box" class="input">
                   <input type="text" placeholder="Sub-query results" disabled="true" igxInput />
                 </igx-input-group>
               </div>
               <div class="row-layout group_9">
-                <button igxButton="outlined" type="button" igxRipple routerLink="/subquery-collapsed" class="button_1">
-                  <igx-icon>
+                <button igxRipple igxIconButton="flat" routerLink="/subquery-collapsed" class="icon-button">
+                  <igx-icon class="icon_1">
                     check
                   </igx-icon>
                 </button>
-                <button igxButton="outlined" type="button" igxRipple class="button_1">
-                  <igx-icon>
+                <button igxRipple igxIconButton="flat" class="icon-button">
+                  <igx-icon class="icon_1">
                     close
                   </igx-icon>
                 </button>
@@ -98,7 +98,7 @@
                   Where
                 </p>
                 <div class="column-layout conditions_group-4">
-                  <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown" class="button_2">
+                  <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown" class="button_1">
                     <span>And</span>
                     <igx-icon class="icon">
                       keyboard_arrow_down
@@ -109,12 +109,12 @@
                       <div class="row-layout group_13">
                         <igx-chip class="chip">
                           <igx-prefix>
-                            <igx-icon class="icon_1">
+                            <igx-icon class="icon_2">
                               drag_indicator
                             </igx-icon>
                           </igx-prefix>
                           <igx-suffix>
-                            <igx-icon class="icon_2">
+                            <igx-icon class="icon_3">
                               remove_circle
                             </igx-icon>
                           </igx-suffix>
@@ -124,12 +124,12 @@
                       <div class="row-layout group_14">
                         <igx-chip class="chip">
                           <igx-prefix>
-                            <igx-icon class="icon_1">
+                            <igx-icon class="icon_2">
                               drag_indicator
                             </igx-icon>
                           </igx-prefix>
                           <igx-suffix>
-                            <igx-icon class="icon_2">
+                            <igx-icon class="icon_3">
                               remove_circle
                             </igx-icon>
                           </igx-suffix>
@@ -138,9 +138,9 @@
                       </div>
                     </div>
                     <div class="column-layout conditions_group">
-                      <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_3">
+                      <button igxButton="flat" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_2">
                         <span>Or</span>
-                        <igx-icon class="icon_3">
+                        <igx-icon class="icon_4">
                           keyboard_arrow_down
                         </igx-icon>
                       </button>
@@ -148,12 +148,12 @@
                         <div class="row-layout group_13">
                           <igx-chip class="chip">
                             <igx-prefix>
-                              <igx-icon class="icon_1">
+                              <igx-icon class="icon_2">
                                 drag_indicator
                               </igx-icon>
                             </igx-prefix>
                             <igx-suffix>
-                              <igx-icon class="icon_2">
+                              <igx-icon class="icon_3">
                                 remove_circle
                               </igx-icon>
                             </igx-suffix>
@@ -163,12 +163,12 @@
                         <div class="row-layout group_14">
                           <igx-chip class="chip">
                             <igx-prefix>
-                              <igx-icon class="icon_1">
+                              <igx-icon class="icon_2">
                                 drag_indicator
                               </igx-icon>
                             </igx-prefix>
                             <igx-suffix>
-                              <igx-icon class="icon_2">
+                              <igx-icon class="icon_3">
                                 remove_circle
                               </igx-icon>
                             </igx-suffix>
@@ -186,10 +186,10 @@
                       </igx-drop-down>
                     </div>
                     <div class="row-layout group_2">
-                      <button igxButton="flat" type="button" igxRipple routerLink="/a-and-new-condition" class="button_4">
+                      <button igxButton="flat" type="button" igxRipple routerLink="/a-and-new-condition" class="button_3">
                         + condition
                       </button>
-                      <button igxButton="flat" type="button" igxRipple class="button_4">
+                      <button igxButton="flat" type="button" igxRipple class="button_3">
                         + group
                       </button>
                     </div>
@@ -209,12 +209,12 @@
           <div class="row-layout group_15">
             <igx-chip class="chip">
               <igx-prefix>
-                <igx-icon class="icon_1">
+                <igx-icon class="icon_2">
                   drag_indicator
                 </igx-icon>
               </igx-prefix>
               <igx-suffix>
-                <igx-icon class="icon_2">
+                <igx-icon class="icon_3">
                   remove_circle
                 </igx-icon>
               </igx-suffix>
@@ -226,14 +226,14 @@
     </div>
   </div>
   <div class="row-layout group_16">
-    <button igxButton="flat" type="button" igxRipple class="button_5">
+    <button igxButton="flat" type="button" igxRipple class="button_4">
       Delete all
     </button>
     <div class="row-layout group_5">
-      <button igxButton="outlined" type="button" igxRipple class="button_5">
+      <button igxButton="outlined" type="button" igxRipple class="button_4">
         Cancel
       </button>
-      <button igxButton="contained" type="button" igxRipple class="button_5">
+      <button igxButton="contained" type="button" igxRipple class="button_4">
         Apply
       </button>
     </div>

@@ -1,0 +1,52 @@
+<div class="column-layout group">
+  <h6 class="h6">
+    Edit Query
+  </h6>
+  <div class="column-layout group_1">
+    <div class="row-layout entities_return-fields">
+      <div class="column-layout group_2">
+        <p class="ig-typography__body-2 text">
+          From
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Compounds
+          </igx-select-item>
+        </igx-select>
+      </div>
+      <div class="column-layout group_2">
+        <p class="ig-typography__body-2 text">
+          Select
+        </p>
+        <igx-select type="box" [(ngModel)]="value" class="select">
+          <igx-select-item value="1">
+            Id, Structure, Date
+          </igx-select-item>
+        </igx-select>
+      </div>
+    </div>
+    <div class="column-layout section_conditions">
+      <p class="ig-typography__body-2 text">
+        Where
+      </p>
+      <div class="row-layout entities_return-fields">
+        <button igxButton="flat" type="button" igxRipple routerLink="/add-a" class="button">
+          + condition
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row-layout group_3">
+    <button igxButton="flat" type="button" igxRipple class="button_1">
+      Delete all
+    </button>
+    <div class="row-layout group_4">
+      <button igxButton="outlined" type="button" igxRipple class="button_1">
+        Cancel
+      </button>
+      <button igxButton="contained" type="button" igxRipple class="button_1">
+        Apply
+      </button>
+    </div>
+  </div>
+</div>

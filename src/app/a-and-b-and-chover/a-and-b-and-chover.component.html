@@ -67,12 +67,22 @@
                 </igx-suffix>
                 field greater than equal to "400"
               </igx-chip>
-              <button igxButton="outlined" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_1">
-                <igx-icon>
-                  add
-                </igx-icon>
-              </button>
+              @if (buttonVisible) {
+                <button igxButton="outlined" type="button" igxRipple [igxToggleAction]="dropdown1" class="button_1">
+                  <igx-icon>
+                    add
+                  </igx-icon>
+                </button>
+              }
               <igx-drop-down #dropdown1 class="dropdown">
+                <igx-drop-down-item>
+                  Add condition
+                </igx-drop-down-item>
+                <igx-drop-down-item>
+                  Add group
+                </igx-drop-down-item>
+              </igx-drop-down>
+              <igx-drop-down class="dropdown">
                 <igx-drop-down-item>
                   Add condition
                 </igx-drop-down-item>
@@ -90,7 +100,7 @@
               </igx-icon>
             </button>
             <div class="column-layout group_5">
-              <div class="row-layout group_7">
+              <div class="row-layout group_9">
                 <igx-chip class="chip">
                   <igx-prefix>
                     <igx-icon class="icon_1">
@@ -104,6 +114,19 @@
                   </igx-suffix>
                   Structure contains "value"
                 </igx-chip>
+                <button igxRipple igxIconButton="flat" [igxToggleAction]="dropdown3" class="icon-button">
+                  <igx-icon class="icon_4">
+                    add
+                  </igx-icon>
+                </button>
+                <igx-drop-down #dropdown3 class="dropdown">
+                  <igx-drop-down-item routerLink="/a-and-b-and-c-or-d">
+                    Add condition
+                  </igx-drop-down-item>
+                  <igx-drop-down-item>
+                    Add group
+                  </igx-drop-down-item>
+                </igx-drop-down>
               </div>
             </div>
             <igx-drop-down #dropdown2 class="dropdown_1">
@@ -116,7 +139,7 @@
             </igx-drop-down>
           </div>
           <div class="row-layout group_2">
-            <button igxButton="flat" type="button" igxRipple routerLink="/a-and-b-and-c-or-d" class="button_3">
+            <button igxButton="flat" type="button" igxRipple class="button_3">
               + condition
             </button>
             <button igxButton="flat" type="button" igxRipple class="button_3">
@@ -135,11 +158,11 @@
       </div>
     </div>
   </div>
-  <div class="row-layout group_9">
+  <div class="row-layout group_10">
     <button igxButton="flat" type="button" igxRipple class="button_4">
       Delete all
     </button>
-    <div class="row-layout group_10">
+    <div class="row-layout group_11">
       <button igxButton="outlined" type="button" igxRipple class="button_4">
         Cancel
       </button>

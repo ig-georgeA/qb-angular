@@ -71,13 +71,27 @@
                   </igx-input-group>
                 </div>
                 <div class="row-layout group_9">
-                  <button igxButton="outlined" type="button" igxRipple routerLink="/a-and-b" class="button_1">
-                    <igx-icon>
+                  @if (buttonVisible) {
+                    <button igxButton="outlined" type="button" igxRipple routerLink="/a-and-b" class="button_1">
+                      <igx-icon>
+                        check
+                      </igx-icon>
+                    </button>
+                  }
+                  @if (buttonVisible1) {
+                    <button igxButton="outlined" type="button" igxRipple routerLink="/a" class="button_1">
+                      <igx-icon>
+                        close
+                      </igx-icon>
+                    </button>
+                  }
+                  <button igxRipple igxIconButton="flat" routerLink="/a-and-b" class="icon-button">
+                    <igx-icon class="icon_3">
                       check
                     </igx-icon>
                   </button>
-                  <button igxButton="outlined" type="button" igxRipple routerLink="/a" class="button_1">
-                    <igx-icon>
+                  <button igxRipple igxIconButton="flat" routerLink="/a" class="icon-button">
+                    <igx-icon class="icon_3">
                       close
                     </igx-icon>
                   </button>
