@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { IGX_SELECT_DIRECTIVES, IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IGX_INPUT_GROUP_DIRECTIVES, IgxToggleDirective, IgxToggleActionDirective, IgxOverlayOutletDirective, IGX_CHIPS_DIRECTIVES, IGX_DROP_DOWN_DIRECTIVES } from 'igniteui-angular';
+import { IGX_SELECT_DIRECTIVES, IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IGX_INPUT_GROUP_DIRECTIVES, IgxIconButtonDirective, IgxToggleDirective, IgxToggleActionDirective, IgxOverlayOutletDirective, IGX_CHIPS_DIRECTIVES, IGX_DROP_DOWN_DIRECTIVES } from 'igniteui-angular';
 import { SubqueryAAndBAndCOrDAndEComponent } from './subquery-a-and-b-and-c-or-d-and-e.component';
 
 describe('SubqueryAAndBAndCOrDAndEComponent', () => {
@@ -12,7 +12,7 @@ describe('SubqueryAAndBAndCOrDAndEComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ SubqueryAAndBAndCOrDAndEComponent, NoopAnimationsModule, FormsModule, RouterTestingModule, IGX_SELECT_DIRECTIVES, IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IGX_INPUT_GROUP_DIRECTIVES, IgxToggleDirective, IgxToggleActionDirective, IgxOverlayOutletDirective, IGX_CHIPS_DIRECTIVES, IGX_DROP_DOWN_DIRECTIVES ]
+      imports: [ SubqueryAAndBAndCOrDAndEComponent, NoopAnimationsModule, FormsModule, RouterTestingModule, IGX_SELECT_DIRECTIVES, IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IGX_INPUT_GROUP_DIRECTIVES, IgxIconButtonDirective, IgxToggleDirective, IgxToggleActionDirective, IgxOverlayOutletDirective, IGX_CHIPS_DIRECTIVES, IGX_DROP_DOWN_DIRECTIVES ]
     })
     .compileComponents();
   });

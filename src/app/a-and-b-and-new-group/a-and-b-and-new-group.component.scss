@@ -130,8 +130,8 @@
   padding: 0 0 0 4px;
 }
 .group_10 {
-  background-color: var(--ig-gray-100);
-  border-color: var(--ig-gray-400);
+  background-color: var(--ig-gray-200);
+  border-color: var(--ig-gray-300);
   border-width: 1px;
   border-style: solid;
   border-radius: 16px;
@@ -192,6 +192,14 @@
 .icon_3 {
   color: teal;
 }
+.icon_4 {
+  color: var(--ig-secondary-500);
+}
+.icon-button {
+  --igx-button-foreground: var(--ig-secondary-500);
+  --igx-button-background: var(--ig-surface-500);
+  --ig-size: var(--ig-size-medium);
+}
 .select {
   height: max-content;
 }
@@ -220,12 +228,6 @@
   min-width: min-content;
   max-width: 200px;
 }
-.button_2 {
-  --ig-size: var(--ig-size-medium);
-  height: max-content;
-  min-width: min-content;
-  flex-shrink: 0;
-}
 .dropdown {
   left: 0;
   top: 0;
@@ -233,7 +235,7 @@
   height: max-content;
   min-width: min-content;
 }
-.button_3 {
+.button_2 {
   --ig-size: var(--ig-size-medium);
   height: max-content;
   flex-shrink: 0;

@@ -52,13 +52,13 @@
           </igx-icon>
         </div>
         <div class="row-layout group_6">
-          <button igxButton="outlined" [disabled]="true" type="button" igxRipple class="button">
-            <igx-icon>
+          <button [disabled]="true" igxRipple igxIconButton="flat" routerLink="/a-and-b-and-c" class="icon-button">
+            <igx-icon class="icon_2">
               check
             </igx-icon>
           </button>
-          <button igxButton="outlined" type="button" igxRipple class="button">
-            <igx-icon>
+          <button igxRipple igxIconButton="flat" routerLink="/a-and-b" class="icon-button">
+            <igx-icon class="icon_2">
               close
             </igx-icon>
           </button>
@@ -66,10 +66,10 @@
       </div>
       @if (groupVisible) {
         <div class="row-layout group_2">
-          <button igxButton="outlined" type="button" igxRipple class="button_1">
+          <button igxButton="outlined" type="button" igxRipple class="button">
             + condition
           </button>
-          <button igxButton="outlined" type="button" igxRipple class="button_1">
+          <button igxButton="outlined" type="button" igxRipple class="button">
             + group
           </button>
         </div>
@@ -77,17 +77,17 @@
     </div>
   </div>
   <div class="row-layout group_7">
-    <button igxButton="flat" type="button" igxRipple class="button_2">
+    <button igxButton="flat" type="button" igxRipple class="button_1">
       Delete all
     </button>
     <div class="row-layout group_8">
       <p class="ig-typography__body-2 text_1">
         1 condition is incomplete!
       </p>
-      <button igxButton="outlined" type="button" igxRipple class="button_2">
+      <button igxButton="outlined" type="button" igxRipple class="button_1">
         Cancel
       </button>
-      <button igxButton="contained" type="button" igxRipple class="button_2">
+      <button igxButton="contained" type="button" igxRipple class="button_1">
         Apply
       </button>
     </div>

@@ -33,12 +33,12 @@
   gap: 16px;
   position: relative;
   flex-grow: 1;
-  flex-basis: 0;
+  flex-shrink: 0;
 }
 .row-layout {
   display: flex;
 }
-.group_2 {
+.entities_return-fields {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -46,14 +46,14 @@
   position: relative;
   min-width: 50px;
 }
-.group_3 {
+.group_2 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 4px;
   position: relative;
 }
-.group_4 {
+.section_conditions {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -62,28 +62,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
-.group_5 {
-  background-color: var(--ig-gray-100);
-  border-color: var(--ig-gray-400);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 16px;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  padding: 16px;
-}
-.group_6 {
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 8px;
-  position: relative;
-  width: min-content;
-}
-.group_7 {
+.group_3 {
   justify-content: space-between;
   align-items: stretch;
   align-content: flex-start;
@@ -91,11 +70,11 @@
   margin: 8px 0 0;
   min-width: 50px;
 }
-.group_8 {
+.group_4 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
-  gap: 16px;
+  gap: 8px;
   position: relative;
 }
 .h6 {
@@ -108,56 +87,11 @@
   height: max-content;
   min-width: min-content;
 }
-.icon {
-  --size: 18px;
-  font-size: 18px;
-  width: 18px;
-  height: 18px;
-  color: var(--ig-error-500);
-  left: 181.12209878731494px;
-  top: 11.045623736398383px;
-  position: absolute;
-}
-.icon_1 {
-  --size: 18px;
-  font-size: 18px;
-  width: 18px;
-  height: 18px;
-  color: var(--ig-error-500);
-  left: 696.4782220153053px;
-  top: 9.381107471258845px;
-  position: absolute;
-}
-.icon_2 {
-  color: var(--ig-secondary-500);
-}
-.text_1 {
-  color: var(--ig-error-500);
-  height: max-content;
-  min-width: min-content;
-  align-self: center;
-}
-.icon-button {
-  --igx-button-foreground: var(--ig-secondary-500);
-  --igx-button-background: var(--ig-surface-500);
-  --ig-size: var(--ig-size-medium);
-}
 .select {
   height: max-content;
 }
-.user-input {
-  height: max-content;
-  min-width: min-content;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.select_2 {
-  width: 200px;
-  height: max-content;
-  min-width: min-content;
-  max-width: 200px;
-}
 .button {
+  --ig-size: var(--ig-size-small);
   height: max-content;
   flex-shrink: 0;
 }
