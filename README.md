@@ -1,4 +1,4 @@
-# Query builder material v2
+# Query builder redesign
 
 This project was generated with [App Builder Code Gen](https://www.infragistics.com/products/appbuilder).
 

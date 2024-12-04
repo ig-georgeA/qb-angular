@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"query-builder-material-v2": {
+		"query-builder-redesign": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist/query-builder-material-v2",
+						"outputPath": "dist/query-builder-redesign",
 						"index": "src/index.html",
 						"browser": "src/main.ts",
 						"polyfills": [
@@ -69,10 +69,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "query-builder-material-v2:build:production"
+							"buildTarget": "query-builder-redesign:build:production"
 						},
 						"development": {
-							"buildTarget": "query-builder-material-v2:build:development"
+							"buildTarget": "query-builder-redesign:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -80,7 +80,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"buildTarget": "query-builder-material-v2:build"
+						"buildTarget": "query-builder-redesign:build"
 					}
 				},
 				"test": {
